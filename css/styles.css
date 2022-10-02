@@ -11,6 +11,39 @@
   --background-focus-color: #188ce8;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
 /* @font-face {
   font-family: Roboto-400;
   src: url(../fonts/Roboto-Regular.ttf);
@@ -45,9 +78,18 @@ body {
 }
 
 /* ------------------header--------------- */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  border: 1px solid blue;
+}
 
 .header {
   background-color: #ffffff;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .list {
@@ -131,6 +173,9 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-text-color);
+  /* padding: 200px 452px 280px 452px; */
+  margin-bottom: 30px;
+  max-width: 696px;
 }
 
 .main-btn {
@@ -180,6 +225,7 @@ body {
   letter-spacing: var(--main-letter-spacing);
   text-transform: uppercase;
   color: var(--title-text-color);
+  margin-bottom: 10px;
 }
 
 .benefits-text {
@@ -201,6 +247,7 @@ body {
   text-align: center;
   letter-spacing: var(--main-letter-spacing);
   color: var(--title-text-color);
+  margin-bottom: 50px;
 }
 
 .about-list {
@@ -224,6 +271,7 @@ body {
   text-align: center;
   letter-spacing: var(--main-letter-spacing);
   color: var(--title-text-color);
+  margin-bottom: 50px;
 }
 
 .team-list {
@@ -242,6 +290,7 @@ body {
   text-align: center;
   letter-spacing: var(--main-letter-spacing);
   color: var(--title-text-color);
+  margin-bottom: 10px;
 }
 .team-text {
   font-size: 16px;
@@ -265,6 +314,7 @@ body {
   line-height: 1.19;
   letter-spacing: var(--main-letter-spacing);
   color: var(--main-text-color);
+  margin-bottom: 20px;
 }
 
 .footer-adress {
@@ -277,6 +327,7 @@ body {
   letter-spacing: var(--main-letter-spacing);
   color: #ffffff;
   cursor: pointer;
+  margin-bottom: 9px;
 }
 
 .footer-link {
@@ -285,6 +336,7 @@ body {
   letter-spacing: var(--main-letter-spacing);
   color: var(--footer-text-color);
   cursor: pointer;
+  margin-bottom: 9px;
 }
 
 .footer-link:hover,
@@ -295,6 +347,7 @@ body {
 /*-------------portfolio------------- */
 
 .main-nav-list {
+  margin-bottom: 50px;
 }
 
 .btn:hover,
