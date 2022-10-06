@@ -18,7 +18,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0 auto;
+  margin: 0;
 }
 
 img {
@@ -91,10 +91,7 @@ body {
 }
 
 .header {
-  background-color: #ffffff;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .list {
@@ -123,7 +120,6 @@ body {
   display: flex;
   align-items: center;
   gap: 50px;
-  padding: 20px;
 }
 
 .header-link {
@@ -132,6 +128,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+  padding: 32px 0;
+  display: block;
 }
 
 .header-navigator {
@@ -148,7 +146,6 @@ body {
   display: flex;
   margin-left: auto;
   gap: 50px;
-  padding: 20px;
 }
 
 .header-tel,
@@ -158,6 +155,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--link-text-color);
+  padding: 32px 0;
 }
 
 /* .heder-tel {
@@ -191,7 +189,8 @@ body {
 .main {
   background: var(--background-accent-color);
   /* width: 1600px; */
-  height: 600px;
+  /* height: 600px; */
+  padding: 200px 0;
 }
 
 .main-title {
@@ -202,10 +201,9 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-text-color);
-  padding-top: 200px;
   margin-bottom: 30px;
-  max-width: 696px;
-  align-items: center;
+  width: 696px;
+  margin: 0 auto;
 }
 
 .main-btn {
@@ -222,10 +220,11 @@ body {
   cursor: pointer;
   background: var(--focus-color);
   border-radius: 4px;
-  width: 216px;
-  height: 50px;
+  min-width: 216px;
+  padding: 10px 32px;
   display: block;
   margin: 0 auto;
+  border: none;
 }
 
 /*---------------------- .benefits ---------------- */
@@ -275,6 +274,7 @@ body {
 /*------------ .about ----------*/
 
 .about {
+  padding-top: 0;
 }
 
 .about-title {
@@ -324,10 +324,12 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background-color: var(--background-color);
 }
 
-.wrap {
+.team-wrap {
   text-align: center;
+  padding: 30px 0;
 }
 
 .team-top-text {
@@ -338,7 +340,6 @@ body {
   letter-spacing: var(--main-letter-spacing);
   color: var(--title-text-color);
   margin-bottom: 10px;
-  margin-top: 30px;
 }
 .team-text {
   font-size: 16px;
@@ -346,31 +347,28 @@ body {
   text-align: center;
   letter-spacing: var(--main-letter-spacing);
   color: var(--link-text-color);
-  margin-bottom: 30px;
 }
 
 /*----------------- .footer -------------*/
 
 .footer {
   background: var(--background-accent-color);
-  height: 252px;
-  align-content: center;
+  padding-bottom: 60px;
   padding-top: 60px;
 }
 
 .footer-logo {
   font-family: "Raleway", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: var(--main-letter-spacing);
   color: var(--main-text-color);
   padding-bottom: 20px;
+  display: block;
 }
-.footer-list {
+.footer-item:nth-last-child() {
   margin-bottom: 9px;
-  padding: 10px;
 }
 
 .footer-adress {
@@ -403,7 +401,7 @@ body {
 .main-nav-list {
   display: flex;
   gap: 8px;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   justify-content: center;
 }
 
@@ -423,12 +421,11 @@ body {
   cursor: pointer;
   border-radius: 4px;
   border: none;
-  padding: 10px;
+  padding: 6px 22px;
 }
 
 .nav-btn {
   background: var(--background-btn);
-  color: var(--title-text-color);
   letter-spacing: var(--main-letter-spacing);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -439,10 +436,12 @@ body {
   flex-wrap: wrap;
   gap: 30px;
 }
+.portfolio-wrap {
+  padding: 20px 24px;
+  border-bottom: 1px solid #eeeeee;
+}
 
 .portfolio-item {
-  background: var(--background-color);
-  border-bottom: 1px solid #eeeeee;
   width: calc(100%-60px) / 3;
 }
 
@@ -452,6 +451,7 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
+  margin-bottom: 4px;
 }
 
 .portfolio-text {
