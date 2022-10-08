@@ -367,7 +367,7 @@ body {
   margin-bottom: 20px;
   display: block;
 }
-.footer-item:nth-last-child {
+.footer-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
