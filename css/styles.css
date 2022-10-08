@@ -201,9 +201,9 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-text-color);
-  margin-bottom: 30px;
   width: 696px;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .main-btn {
@@ -364,7 +364,7 @@ body {
   line-height: 1.19;
   letter-spacing: var(--main-letter-spacing);
   color: var(--main-text-color);
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   display: block;
 }
 .footer-item:nth-last-child() {
@@ -438,7 +438,8 @@ body {
 }
 .portfolio-wrap {
   padding: 20px 24px;
-  border-bottom: 1px solid #eeeeee;
+  border: 1px solid #eeeeee;
+  border-top: 0;
 }
 
 .portfolio-item {
